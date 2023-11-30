@@ -1,13 +1,26 @@
 import Image from "next/image";
 
+const sizes = {
+  sm: 15,
+  md: "30",
+  lg: "50",
+};
+
 function Logo({
   src = "/images/brand-logo.png",
   alt = "Taxacademy Logo",
-  width = 50,
-  height = 50,
+  size = "sm",
   ...props
 }) {
-  return <Image src={src} alt={alt} width={width} height={height} {...props} />;
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={sizes[size]}
+      height={sizes[size]}
+      {...props}
+    />
+  );
 }
 
 export default Logo;
