@@ -12,10 +12,7 @@ function Hero() {
           { label: "Design", href: "#" },
         ]}
       />
-      <Thumbnail
-        src="https://tse1.mm.bing.net/th?id=OVP.EV-XTbO_yVr-Ej6ThwTLpwEsDh&pid=Api&w=296&h=156&c=7&p=0"
-        alt="Thumbnail"
-      />
+      <Thumbnail src="https://tse1.mm.bing.net/th?id=OVP.EV-XTbO_yVr-Ej6ThwTLpwEsDh&pid=Api&w=296&h=156&c=7&p=0" />
       <CourseSummary
         title="Learn Figma - UI/UX Design Essential Training"
         headline="Learn how to design a beautiful and engaging mobile app with Figma.

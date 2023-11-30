@@ -14,7 +14,7 @@ function Login() {
       <Card className="w-screen max-w-md py-10 border-t-4 sm:border-b-4 sm:border-t-4 sm:shadow-lg sm:border-b-brand-secondary border-t-brand-secondary">
         <header className="flex flex-col items-center self-center justify-center gap-4 mb-5">
           <span>
-            <Logo />
+            <Logo size="lg"/>
           </span>
           <h1 className="text-lg font-semibold text-classic-black">
             Sign in to your account
