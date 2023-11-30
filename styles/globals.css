@@ -9,3 +9,31 @@
   --color-white: #ffffff;
   --color-black: #1f2937;
 }
+
+.center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-this {
+  margin: 0 auto;
+}
+
+.title-sm {
+  font-weight: 700;
+  font-size: smaller;
+  color: var(--color-black);
+}
+
+.title-md {
+  font-weight: 700;
+  font-size: medium;
+  color: var(--color-black);
+}
+
+.title-lg {
+  font-weight: 800;
+  font-size: large;
+  color: var(--color-black);
+}
