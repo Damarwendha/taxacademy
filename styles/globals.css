@@ -37,3 +37,10 @@
   font-size: large;
   color: var(--color-black);
 }
+
+.overflow-dot {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
