@@ -43,7 +43,7 @@ function Login() {
             </Button>
           </form>
 
-          <Link>Forgot your password?</Link>
+          <Link className='w-fit'>Forgot your password?</Link>
         </Card>
       </div>
     </>

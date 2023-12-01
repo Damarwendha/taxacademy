@@ -24,20 +24,20 @@ function Navbar() {
           <NavbarLink
             as={Link}
             href="#"
-            className="border-y-0 hover:bg-classic-black sm:-mr-6"
+            className="h-10 rounded-none sm:w-20 border-y-0 hover:bg-classic-black sm:-mr-6 center-this sm:text-classic-black sm:border-gray-400"
           >
-            <Button className="rounded-none center-this sm:text-classic-black sm:border-gray-400">
+            <span className="w-full h-full sm:hover:bg-gray-200 center-children">
               Log in
-            </Button>
+            </span>
           </NavbarLink>
           <NavbarLink
             as={Link}
             href="#"
-            className="border-y-0 bg-brand-primary hover:bg-purple-700"
+            className="h-full rounded-none sm:w-20 border-y-0 bg-brand-primary center-this text-classic-white hover:bg-purple-700"
           >
-            <Button className="rounded-none center-this sm:hover:bg-brand-primary">
+            <span className="w-full h-full hover:bg-purple-700 center-children">
               Sign up
-            </Button>
+            </span>
           </NavbarLink>
         </NavbarCollapse>
       </div>
