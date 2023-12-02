@@ -5,7 +5,6 @@ import {
   NavbarLink,
   NavbarCollapse,
   NavbarToggle,
-  Button,
 } from "flowbite-react";
 import Logo from "../Logo";
 
@@ -13,7 +12,7 @@ function Navbar() {
   return (
     <NavbarUi fluid className="relative z-50 drop-shadow-md">
       <NavbarBrand as={Link} href="/">
-        <Logo size="md" className="mr-2" />
+        <Logo size="md" className="mr-2" src="/images/brand-logo.webp" />
         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-classic-black">
           Taxacademy
         </span>
@@ -26,7 +25,7 @@ function Navbar() {
             href="#"
             className="h-10 rounded-none sm:w-20 border-y-0 hover:bg-classic-black sm:-mr-6 center-this sm:text-classic-black sm:border-gray-400"
           >
-            <span className="w-full h-full sm:hover:bg-gray-200 center-children">
+            <span className="w-full h-full text-gray-400 sm:hover:bg-gray-200 center-children">
               Log in
             </span>
           </NavbarLink>
