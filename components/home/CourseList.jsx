@@ -2,13 +2,15 @@ import CourseUnit from "./CourseUnit";
 
 function CourseList({ courses }) {
   return (
-    <div className="grid gap-6 px-6">
+    <ul className="grid gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center">
       {courses.map((course, i) => {
         return (
-          <CourseUnit key={i} title={course.title} imgSrc={course.imgSrc} />
+          <li>
+            <CourseUnit key={i} title={course.title} imgSrc={course.imgSrc} />
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 
