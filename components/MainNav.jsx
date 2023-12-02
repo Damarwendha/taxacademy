@@ -6,7 +6,7 @@ import {
   NavbarCollapse,
   NavbarToggle,
 } from "flowbite-react";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 function Navbar() {
   return (

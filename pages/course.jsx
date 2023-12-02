@@ -1,13 +1,14 @@
-import Hero from "@/components/course/Hero";
-import Main from "@/components/course/Main";
-import MainNav from "@/components/navbar/MainNav";
+import CourseOverview from "@/components/course/CourseOverview";
+import CourseDetails from "@/components/course/CourseDetails";
+import MainNav from "@/components/MainNav";
 
 function Course() {
   return (
     <>
       <MainNav />
-      <Hero />
-      <Main />
+
+      <CourseOverview />
+      <CourseDetails />
     </>
   );
 }

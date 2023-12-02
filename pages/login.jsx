@@ -1,5 +1,5 @@
 import { Button, Card, TextInput } from "flowbite-react";
-import MainNav from "@/components/navbar/MainNav";
+import MainNav from "@/components/MainNav";
 import Link from "@/components/Link";
 import Logo from "@/components/Logo";
 

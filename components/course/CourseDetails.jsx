@@ -5,7 +5,7 @@ import {
   AccordionTitle,
 } from "flowbite-react";
 
-function Main() {
+function CourseDetails() {
   return (
     <Accordion>
       <AccordionPanel>
@@ -23,7 +23,7 @@ function Main() {
       <AccordionPanel>
         <AccordionTitle>Requirements</AccordionTitle>
         <AccordionContent>
-          <ul className="list-disc pl-5 text-gray-700">
+          <ul className="pl-5 text-gray-700 list-disc">
             <li>
               <p>Basic Prototypes</p>
             </li>
@@ -43,4 +43,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default CourseDetails;
