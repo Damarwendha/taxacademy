@@ -1,36 +1,33 @@
-import { FaRegCircle } from "react-icons/fa6";
+import { useState } from "react";
+import { Button } from "flowbite-react";
+import { FaXmark } from "react-icons/fa6";
+import Answers from "./Answers";
 
 function Quiz({
   currQuestionNum,
   question,
-  answerA,
-  answerB,
-  answerC,
-  answerD,
+  // expect answers to be string[]
+  answers,
   totalQuestionNum,
+  onClose,
 }) {
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
   return (
-    <div className="p-4">
-      <p>Question {currQuestionNum}:</p>
+    <div className="fixed top-0 left-0 p-4 bg-white">
+      <div className="flex items-center place-content-between">
+        <p>Question {currQuestionNum}:</p>
+        <FaXmark onClick={onClose} className="hover:opacity-50" />
+      </div>
+
       <h6 className="title-md">{question}</h6>
-      <ul className="flex flex-col gap-3 mt-4">
-        <li className="flex items-center gap-4 p-2 border-2 border-gray-500">
-          <FaRegCircle />
-          <p className=" title-md">{answerA}</p>
-        </li>
-        <li className="flex items-center gap-5 p-2 border-2 bg-brand-inverted border-gray-50">
-          <FaRegCircle />
-          <p className=" title-md">{answerB}</p>
-        </li>
-        <li className="flex items-center gap-4 p-2 border-2 border-gray-500">
-          <FaRegCircle />
-          <p className=" title-md">{answerC}</p>
-        </li>
-        <li className="flex items-center gap-4 p-2 border-2 border-gray-500">
-          <FaRegCircle />
-          <p className=" title-md">{answerD}</p>
-        </li>
-      </ul>
+
+      <Answers
+        answers={answers}
+        selectedIndex={selectedIndex}
+        setSelectedIndex={setSelectedIndex}
+      />
+
       <div className="flex place-content-between">
         <span>
           Question {currQuestionNum} of {totalQuestionNum}
@@ -39,8 +36,10 @@ function Quiz({
           <Button className="mt-1 mb-2 rounded-none text-classic-black">
             Skip question
           </Button>
-          {/* Set disabled to false when users click one of the answer */}
-          <Button className="rounded-none bg-brand-primary" disabled={true}>
+          <Button
+            className="rounded-none bg-brand-primary"
+            disabled={selectedIndex === null}
+          >
             Check answer
           </Button>
         </span>

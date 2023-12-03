@@ -9,7 +9,7 @@ function Lecture() {
   return (
     <>
       <HeaderBar
-        href="#"
+        href="/"
         title="Learn Figma - UI/UX Design Essential Training"
       />
 
@@ -18,10 +18,8 @@ function Lecture() {
           currQuestionNum={1}
           totalQuestionNum={4}
           question="Lorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          answerA="Lorem ipsum"
-          answerB="Lorem ipsum"
-          answerC="Lorem ipsum"
-          answerD="Lorem ipsum"
+          answers={["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"]}
+          onClose={() => setIsPlayingQuiz(false)}
         />
       ) : (
         <QuizIntroSection
