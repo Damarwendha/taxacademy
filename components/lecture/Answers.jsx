@@ -12,6 +12,7 @@ function Answers({ answers, selectedIndex, setSelectedIndex }) {
           itemIndex={i}
           selectedIndex={selectedIndex}
           onSelect={handleSelect}
+          key={i}
         >
           {answer}
         </AnswerItem>
