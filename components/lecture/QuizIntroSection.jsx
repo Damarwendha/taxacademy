@@ -1,11 +1,8 @@
 import { Button } from "flowbite-react";
+import Modal from "../Modal";
+import Quiz from "./Quiz";
 
-function QuizIntroSection({
-  onStartQuiz,
-  title,
-  currQuizNum,
-  totalQuestionNum,
-}) {
+function QuizIntroSection({ title, currQuizNum, totalQuestionNum }) {
   return (
     <div className="flex flex-col h-screen gap-12 center-children">
       <div>
@@ -15,9 +12,26 @@ function QuizIntroSection({
         <span>{totalQuestionNum} questions</span>
       </div>
       <div className="flex gap-2">
-        <Button className="rounded-none bg-brand-primary" onClick={onStartQuiz}>
-          Start quiz
-        </Button>
+        <Modal>
+          <Modal.ToOpen id="quiz">
+            <Button className="rounded-none bg-brand-primary">
+              Start quiz
+            </Button>
+          </Modal.ToOpen>
+          <Modal.Window id="quiz" type="fullscreen">
+            <Quiz
+              currQuestionNum={1}
+              totalQuestionNum={4}
+              question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+              answers={[
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+              ]}
+            />
+          </Modal.Window>
+        </Modal>
         <Button className="text-classic-black">Skip quiz</Button>
       </div>
     </div>

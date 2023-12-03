@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button } from "flowbite-react";
-import { FaXmark } from "react-icons/fa6";
 import Answers from "./Answers";
 
 function Quiz({
@@ -9,17 +8,12 @@ function Quiz({
   // expect answers to be string[]
   answers,
   totalQuestionNum,
-  onClose,
 }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <div className="fixed top-0 left-0 p-4 bg-white">
-      <div className="flex items-center place-content-between">
-        <p>Question {currQuestionNum}:</p>
-        <FaXmark onClick={onClose} className="hover:opacity-50" />
-      </div>
-
+    <>
+      <p>Question {currQuestionNum}:</p>
       <h6 className="title-md">{question}</h6>
 
       <Answers
@@ -44,7 +38,7 @@ function Quiz({
           </Button>
         </span>
       </div>
-    </div>
+    </>
   );
 }
 
