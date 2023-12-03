@@ -44,3 +44,8 @@
   overflow: hidden !important;
   text-overflow: ellipsis;
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}

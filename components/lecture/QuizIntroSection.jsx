@@ -4,7 +4,7 @@ import Quiz from "./Quiz";
 
 function QuizIntroSection({ title, currQuizNum, totalQuestionNum }) {
   return (
-    <div className="flex flex-col h-screen gap-12 center-children">
+    <div className="flex flex-col gap-12 py-10 center-children">
       <div>
         <h3 className="title-lg">{title}</h3>
         <span>Quiz {currQuizNum}</span>
