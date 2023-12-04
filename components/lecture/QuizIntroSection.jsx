@@ -4,9 +4,9 @@ import Quiz from "./Quiz";
 
 function QuizIntroSection({ title, currQuizNum, totalQuestionNum }) {
   return (
-    <div className="flex flex-col gap-12 py-10 center-children">
+    <div className="flex flex-col gap-12 max-h-96 h-[65vw]  center-children">
       <div>
-        <h3 className="title-lg">{title}</h3>
+        <h3 className="font-bold text-[5vw] lg:text-4xl ">{title}</h3>
         <span>Quiz {currQuizNum}</span>
         <span className="mx-4">|</span>
         <span>{totalQuestionNum} questions</span>

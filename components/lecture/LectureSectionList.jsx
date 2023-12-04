@@ -29,7 +29,7 @@ function LectureSectionList({ sectionData }) {
       <Accordion alwaysOpen collapseAll key={i}>
         <Accordion.Panel>
           <Accordion.Title as="div">
-            <h3 className="title-md">
+            <h3 className="leading-5 title-md">
               Section {i + 1}: {section.heading}
             </h3>
             <span className="text-xs text-black">
@@ -49,14 +49,14 @@ function LectureSectionList({ sectionData }) {
                   }`}
                   key={i}
                 >
-                  <MdOutlineCheckBoxOutlineBlank size={20} />
+                  <MdOutlineCheckBoxOutlineBlank className="min-w-[20px] min-h-[20px] " />
                   <span>
                     <p className="mb-2 text-start">
                       {i + 1}. {item.title}
                     </p>
                     <span className="gap-1 row">
                       <MdOutlineOndemandVideo color="gray" />
-                      <p className="text-xs font-normal text-gray-600">
+                      <p className="text-xs text-gray-600 ">
                         {toHoursAndMinutes(item.minutes)}
                       </p>
                     </span>
