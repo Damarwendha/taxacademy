@@ -4,7 +4,7 @@ import { FaRegCircle } from "react-icons/fa6";
 function AnswerItem({ itemIndex, onSelect, children, selectedIndex }) {
   return (
     <li
-      className="flex items-center gap-4 p-2 border-2 border-gray-500"
+      className="flex items-center gap-4 p-2 border-2 border-gray-500 cursor-pointer"
       key={itemIndex}
       onClick={() => onSelect(itemIndex)}
     >

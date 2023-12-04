@@ -16,7 +16,7 @@ import {
 //     ],
 //   }]
 
-function CourseSectionList({ sectionData }) {
+function LectureSectionList({ sectionData }) {
   return sectionData.map((section, i) => {
     const totalMins = section.items.reduce(
       (acc, item) => {
@@ -26,7 +26,7 @@ function CourseSectionList({ sectionData }) {
     );
 
     return (
-      <Accordion alwaysOpen key={i}>
+      <Accordion alwaysOpen collapseAll key={i}>
         <Accordion.Panel>
           <Accordion.Title as="div">
             <h3 className="title-md">
@@ -36,10 +36,19 @@ function CourseSectionList({ sectionData }) {
               0 / {section.items.length} | {toHoursAndMinutes(totalMins)}
             </span>
           </Accordion.Title>
-          <Accordion.Content className="text-sm">
-            <ul className="flex flex-col gap-4">
+          <Accordion.Content className="p-0 text-sm">
+            <ul>
               {section.items.map((item, i) => (
-                <li className="flex gap-3" key={i}>
+                <li
+                  className={`flex gap-3 px-4 py-2 hover:bg-purple-200 ${
+                    i === 0
+                      ? "pt-4"
+                      : i === section.items.length - 1
+                      ? "pb-4"
+                      : ""
+                  }`}
+                  key={i}
+                >
                   <MdOutlineCheckBoxOutlineBlank size={20} />
                   <span>
                     <p className="mb-2 text-start">
@@ -48,7 +57,7 @@ function CourseSectionList({ sectionData }) {
                     <span className="gap-1 row">
                       <MdOutlineOndemandVideo color="gray" />
                       <p className="text-xs font-normal text-gray-600">
-                        {item.minutes}min
+                        {toHoursAndMinutes(item.minutes)}
                       </p>
                     </span>
                   </span>
@@ -62,4 +71,4 @@ function CourseSectionList({ sectionData }) {
   });
 }
 
-export default CourseSectionList;
+export default LectureSectionList;
