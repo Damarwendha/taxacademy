@@ -10,6 +10,10 @@
   --color-black: #1f2937;
 }
 
+body{
+  padding-top: 3.5rem;
+}
+
 .center-children {
   display: flex;
   justify-content: center;

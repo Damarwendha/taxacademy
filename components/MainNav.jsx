@@ -10,7 +10,7 @@ import Logo from "./Logo";
 
 function Navbar() {
   return (
-    <NavbarUi fluid className="relative z-50 drop-shadow-md">
+    <NavbarUi fluid className="fixed top-0 left-0 z-50 w-screen drop-shadow-md">
       <NavbarBrand as={Link} href="/">
         <Logo size="md" className="mr-2" src="/images/brand-logo.webp" />
         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-classic-black">
@@ -18,7 +18,7 @@ function Navbar() {
         </span>
       </NavbarBrand>
       <NavbarToggle />
-      <div className="absolute left-0 z-20 flex flex-col w-full top-14 sm:border-t-0 bg-classic-black sm:w-auto sm:bg-transparent sm:static sm:gap-10 sm:flex-row">
+      <div className="absolute left-0 z-20 flex flex-col w-full top-14 sm:border-t-0 bg-classic-black sm:w-auto sm:bg-transparent min-[768px]:static sm:gap-10 sm:flex-row">
         <NavbarCollapse>
           <NavbarLink
             as={Link}
