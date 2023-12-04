@@ -7,8 +7,10 @@ function Course() {
     <>
       <MainNav />
 
-      <CourseOverview />
-      <CourseDetails />
+      <div className="flex flex-col gap-7">
+        <CourseOverview />
+        <CourseDetails />
+      </div>
     </>
   );
 }

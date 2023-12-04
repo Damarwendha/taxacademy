@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-function Thumbnail({ src, alt = "Thumbnail", ...props }) {
+function Thumbnail({ src, alt = "Thumbnail", className }) {
   return (
-    <span className="flex relative w-full max-w-md aspect-video sm:mr-8">
-      <Image src={src} alt={alt} {...props} fill />;
+    <span
+      className={`flex center-this relative max-w-md sm:max-w-xs lg:max-w-md aspect-video ${{
+        className,
+      }}`}
+    >
+      <Image src={src} alt={alt} fill />;
     </span>
   );
 }
