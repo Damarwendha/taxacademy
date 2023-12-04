@@ -15,7 +15,7 @@ function Login() {
       <MainNav />
 
       <div className="flex items-center justify-center w-screen h-screen">
-        <Card className="w-screen max-w-md py-10 border-t-4 sm:border-b-4 sm:border-t-4 sm:shadow-lg sm:border-b-brand-secondary border-t-brand-secondary">
+        <Card className="w-screen max-w-md py-10 rounded-none shadow-none border-y-0 sm:rounded-md sm:border-b-4 sm:border-t-4 sm:shadow-lg sm:border-b-brand-secondary border-t-brand-secondary">
           <header className="flex flex-col items-center self-center justify-center gap-4 mb-5">
             <span>
               <Logo size="lg" src="/images/brand-logo.webp" />
