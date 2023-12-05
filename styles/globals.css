@@ -10,8 +10,12 @@
   --color-black: #1f2937;
 }
 
+html {
+  min-height: 100%;
+}
+
 body{
-  padding-top: 3.5rem;
+  margin-top: 55px;
 }
 
 .center-children {
