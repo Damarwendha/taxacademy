@@ -1,7 +1,18 @@
 import { HiXMark } from "react-icons/hi2";
 import LectureSectionList from "./LectureSectionList";
+import { BsArrowLeftSquareFill } from "react-icons/bs";
 
-function LectureBar({ onClose }) {
+function LectureBar({ onClose, onOpen, showBar }) {
+  if (!showBar)
+    return (
+      <BsArrowLeftSquareFill
+        size={50}
+        className="fixed -right-1 top-[10vw] rounded-none hover:opacity-80 cursor-pointer"
+        onClick={onOpen}
+        color="var(--color-black)"
+      />
+    );
+
   return (
     <div className="lg:fixed lg:top-11 lg:right-0 lg:w-72 xl:w-96">
       {/* tabs */}
