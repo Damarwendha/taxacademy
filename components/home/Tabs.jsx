@@ -1,6 +1,6 @@
 function Tabs() {
   return (
-    <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 bg-classic-black">
+    <div className="mb-6 text-sm font-medium text-center text-gray-500 border-b border-gray-200 bg-classic-black">
       <ul className="flex flex-wrap -mb-px">
         <li className="me-2">
           <a
