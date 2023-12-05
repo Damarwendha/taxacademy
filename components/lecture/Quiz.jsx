@@ -12,7 +12,7 @@ function Quiz({
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <>
+    <div className="sm:px-[10vw]">
       <p>Question {currQuestionNum}:</p>
       <h6 className="title-md">{question}</h6>
 
@@ -38,7 +38,7 @@ function Quiz({
           </Button>
         </span>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -26,7 +26,7 @@ function LectureSectionList({ sectionData }) {
     );
 
     return (
-      <Accordion alwaysOpen collapseAll key={i}>
+      <Accordion alwaysOpen collapseAll key={i} className="border-x-0">
         <Accordion.Panel>
           <Accordion.Title as="div">
             <h3 className="leading-5 title-md">

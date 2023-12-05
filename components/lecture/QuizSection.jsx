@@ -2,7 +2,7 @@ import { Button } from "flowbite-react";
 import Modal from "../Modal";
 import Quiz from "./Quiz";
 
-function QuizIntroSection({ title, currQuizNum, totalQuestionNum }) {
+function QuizSection({ title, currQuizNum, totalQuestionNum }) {
   return (
     <div className="flex flex-col gap-12 max-h-96 h-[65vw]  center-children">
       <div>
@@ -38,4 +38,4 @@ function QuizIntroSection({ title, currQuizNum, totalQuestionNum }) {
   );
 }
 
-export default QuizIntroSection;
+export default QuizSection;
