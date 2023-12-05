@@ -1,14 +1,8 @@
 import Link from "@/components/Link";
 
-// * - we expect topics to be = [
-//                               { label: "string", href: "#" },
-//                               { label: "string", href: "#" },
-//                               { label: "string", href: "#" },
-//                              ]
-
-function TopicMenu({ topics }) {
+function TopicList({ topics }) {
   return (
-    <div className="max-w-full mx-2 mb-2 text-center break-words sm:-top-8 sm:left-2 sm:absolute">
+    <div className="max-w-full mx-2 mb-2 text-center break-words sm:-top-8 sm:left-1 sm:absolute">
       {topics.map((topic, i) => {
         if (i === topics.length - 1) {
           return (
@@ -29,4 +23,4 @@ function TopicMenu({ topics }) {
   );
 }
 
-export default TopicMenu;
+export default TopicList;
