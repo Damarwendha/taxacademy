@@ -5,8 +5,6 @@ import Link from "@/components/Link";
 //                               { label: "string", href: "#" },
 //                               { label: "string", href: "#" },
 //                              ]
-// * - For better appearence in the user interface,
-//     please ensure that the combined length of all labels does not exceed 28 words.
 
 function TopicMenu({ topics }) {
   return (
