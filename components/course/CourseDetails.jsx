@@ -1,5 +1,4 @@
 import CourseDescription from "./CourseDescription";
-import CourseRequirements from "./CourseRequirements";
 
 function CourseDetails() {
   return (
