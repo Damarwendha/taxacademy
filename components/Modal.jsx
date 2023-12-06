@@ -59,7 +59,7 @@ function Window({ children, id, type = "fit" }) {
 
   const isIdEq = openId === id;
 
-  // prevent page scrolling when modal open
+  // prevent body page scrolling when modal open (in modal window still can scroll)
   useOverflowHidden(isIdEq, [openId, id]);
 
   if (!isIdEq) return null;
@@ -67,7 +67,7 @@ function Window({ children, id, type = "fit" }) {
   const content = (
     <div className="fixed top-0 left-0 z-50 w-screen h-screen backdrop-brightness-50">
       <div
-        className={`relative p-4 bg-white pt-14 ${types[type]}`}
+        className={`relative p-4 bg-white pt-14 overflow-scroll ${types[type]}`}
         ref={refInside}
       >
         <Button
