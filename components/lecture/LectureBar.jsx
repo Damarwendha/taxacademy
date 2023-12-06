@@ -29,7 +29,7 @@ function LectureBar({ onClose, onOpen, showBar }) {
           </li>
         </ul>
         <HiXMark
-          className="absolute hidden lg:inline right-3 hover:opacity-50 top-3"
+          className="absolute hidden cursor-pointer lg:inline right-3 hover:opacity-50 top-3"
           onClick={onClose}
           color="white"
           size={26}
