@@ -4,14 +4,14 @@ import { FaRegCircle } from "react-icons/fa6";
 function AnswerItem({ itemIndex, onSelect, children, selectedIndex }) {
   return (
     <li
-      className="flex items-center gap-4 p-2 border-2 border-gray-500 cursor-pointer"
+      className="flex gap-4 p-2 border-2 border-gray-500 cursor-pointer"
       key={itemIndex}
       onClick={() => onSelect(itemIndex)}
     >
       {selectedIndex === itemIndex ? (
-        <FaRegDotCircle className="react-icon" />
+        <FaRegDotCircle className="mt-[0.15rem] react-icon" />
       ) : (
-        <FaRegCircle className="react-icon" />
+        <FaRegCircle className="mt-[0.15rem] react-icon" />
       )}
 
       <p className=" title-md">{children}</p>
