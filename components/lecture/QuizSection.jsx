@@ -23,7 +23,7 @@ function QuizSection({ title, currQuizNum, totalQuestionNum }) {
           </Modal.ToOpen>
           {/* display Modal.Window when Modal.ToOpen clicked */}
           <Modal.Window id="quiz" type="fullscreen">
-            <div className="sm:px-[10vw] flex flex-col gap-8">
+            <div className="sm:px-[10vw]">
               <QnAList
                 quizData={[
                   {
