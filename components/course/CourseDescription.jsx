@@ -7,7 +7,7 @@ import {
 
 function CourseDescription() {
   return (
-    <Accordion className="sm:w-1/2 sm:h-fit">
+    <Accordion className="sm:w-full sm:h-fit">
       <AccordionPanel>
         <AccordionTitle className="font-bold text-gray-700 xl:text-lg">
           Description

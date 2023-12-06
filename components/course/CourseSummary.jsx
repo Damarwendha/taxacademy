@@ -13,9 +13,9 @@ function CourseSummary({ title, headline, author, authorLink }) {
 
       <p className="mt-4 text-sm sm:mt-2">
         Created by
-        <Link href={authorLink} className="ml-1 underline">
+        <span href={authorLink} className="ml-1">
           {author}
-        </Link>
+        </span>
       </p>
 
       <div className="mt-2 sm:mt-2">

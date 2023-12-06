@@ -4,7 +4,7 @@ function Link({ className, href = "#", children, ...props }) {
   return (
     <LinkLib
       href={href}
-      className={`text-sm font-bold text-blue-800 hover:underline ${className}`}
+      className={`text-sm font-bold text-blue-800 ${className}`}
       {...props}
     >
       {children}

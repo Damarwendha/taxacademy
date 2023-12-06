@@ -14,7 +14,7 @@ html {
   min-height: 100%;
 }
 
-body{
+body {
   margin-top: 55px;
 }
 
@@ -56,4 +56,14 @@ body{
 .row {
   display: flex;
   align-items: center;
+}
+
+button:hover {
+  opacity: 0.7;
+  transition: 0.4s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: 0.4s ease;
 }

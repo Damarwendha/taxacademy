@@ -19,6 +19,7 @@ function QuizSection({ title, currQuizNum, totalQuestionNum }) {
             </Button>
           </Modal.ToOpen>
           <Modal.Window id="quiz" type="fullscreen">
+            <>
             <Quiz
               currQuestionNum={1}
               totalQuestionNum={4}
@@ -30,6 +31,41 @@ function QuizSection({ title, currQuizNum, totalQuestionNum }) {
                 "Lorem ipsum",
               ]}
             />
+            <Quiz
+              currQuestionNum={1}
+              totalQuestionNum={4}
+              question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+              answers={[
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+              ]}
+            />
+            <Quiz
+              currQuestionNum={1}
+              totalQuestionNum={4}
+              question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+              answers={[
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+              ]}
+            />
+            <Quiz
+              currQuestionNum={1}
+              totalQuestionNum={4}
+              question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+              answers={[
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+                "Lorem ipsum",
+              ]}
+            />
+            </>
+
           </Modal.Window>
         </Modal>
         <Button className="text-classic-black">Skip quiz</Button>

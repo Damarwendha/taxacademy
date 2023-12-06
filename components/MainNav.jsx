@@ -17,9 +17,9 @@ function Navbar() {
           Taxacademy
         </span>
       </NavbarBrand>
-      <NavbarToggle />
+      {/* <NavbarToggle /> */}
       <div className="absolute left-0 z-20 flex flex-col w-full top-14 sm:border-t-0 bg-classic-black sm:w-auto sm:bg-transparent min-[768px]:static sm:gap-10 sm:flex-row">
-        <NavbarCollapse>
+        {/* <NavbarCollapse>
           <NavbarLink
             as={Link}
             href="#"
@@ -38,7 +38,7 @@ function Navbar() {
               Sign up
             </span>
           </NavbarLink>
-        </NavbarCollapse>
+        </NavbarCollapse> */}
       </div>
     </NavbarUi>
   );

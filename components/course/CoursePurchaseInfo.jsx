@@ -13,5 +13,5 @@ function CoursePurchaseInfo({ time = TimeProp }) {
     </div>
   );
 }
-// Aug. 17, 2023
+
 export default CoursePurchaseInfo;
