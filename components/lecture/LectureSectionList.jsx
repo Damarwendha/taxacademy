@@ -49,7 +49,7 @@ function LectureSectionList({ sectionData }) {
                   }`}
                   key={i}
                 >
-                  <MdOutlineCheckBoxOutlineBlank className="min-w-[20px] min-h-[20px] " />
+                  <MdOutlineCheckBoxOutlineBlank className="react-icon" />
                   <span>
                     <p className="mb-2 text-start">
                       {i + 1}. {item.title}

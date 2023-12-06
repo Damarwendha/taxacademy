@@ -58,6 +58,12 @@ body {
   align-items: center;
 }
 
+/* only for react icon lib to fix size behaviour */
+.react-icon {
+  min-width: 20px;
+  min-height: 20px;
+}
+
 button:hover {
   opacity: 0.7;
   transition: 0.4s ease;

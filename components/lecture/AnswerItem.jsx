@@ -8,7 +8,11 @@ function AnswerItem({ itemIndex, onSelect, children, selectedIndex }) {
       key={itemIndex}
       onClick={() => onSelect(itemIndex)}
     >
-      {selectedIndex === itemIndex ? <FaRegDotCircle /> : <FaRegCircle />}
+      {selectedIndex === itemIndex ? (
+        <FaRegDotCircle className="react-icon" />
+      ) : (
+        <FaRegCircle className="react-icon" />
+      )}
 
       <p className=" title-md">{children}</p>
     </li>
