@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { FaArrowLeft } from "react-icons/fa6";
-import { MdOutlineLibraryBooks } from "react-icons/md";
+import { LuBookCopy } from "react-icons/lu";
 import { IoIosLogOut } from "react-icons/io";
 import CourseOverview from "@/components/course/CourseOverview";
 import CourseDetails from "@/components/course/CourseDetails";
@@ -46,15 +46,18 @@ function Course() {
         <CourseDetails />
       </div>
 
-      <ul className="fixed bottom-0 right-0 flex justify-around w-screen py-1 bg-black border-t-2 sm:hidden opacity-90 rounded-t-3xl">
-        <li className="flex flex-col items-center justify-center hover:opacity-50">
-          <MdOutlineLibraryBooks size={25} color="white" />
+      <ul className="fixed bottom-0 right-0 grid w-screen grid-cols-5 py-1 bg-black border-t-2 sm:hidden opacity-90">
+        <li></li>
+        <li></li>
+        <li className="flex flex-col items-center justify-center py-[0.1rem] opacity-50 hover:opacity-100">
+          <LuBookCopy size={25} color="white" opacity="80%" />
           <span className="text-[0.55rem] font-bold text-gray-200">
-            List Course
+            My courses
           </span>
         </li>
+        <li></li>
         <li
-          className="flex flex-col items-center justify-center hover:opacity-50"
+          className="flex flex-col items-center justify-center opacity-50 hover:opacity-100 py-[0.1rem]"
           onClick={handleLogout}
         >
           <IoIosLogOut size={25} color="white" />
