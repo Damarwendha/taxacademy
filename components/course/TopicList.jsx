@@ -2,7 +2,7 @@ import Link from "@/components/Link";
 
 function TopicList({ topics }) {
   return (
-    <div className="max-w-full mx-2 mb-2 text-center break-words sm:mx-0 sm:-top-8 sm:left-0 left-4 sm:absolute">
+    <div className="hidden max-w-full mx-2 mb-2 text-center break-words sm:inline sm:mx-0 sm:-top-8 sm:left-0 left-4 sm:absolute">
       {topics.map((topic, i) => {
         if (i === topics.length - 1) {
           return (
