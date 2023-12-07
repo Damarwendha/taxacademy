@@ -4,7 +4,6 @@ import Link from "@/components/Link";
 import LoginForm from "@/components/login/LoginForm";
 import LoginHeading from "@/components/login/LoginHeading";
 import Helmet from "@/components/Helmet";
-import { ToastContainer } from "react-toastify";
 
 function Login() {
   return (
@@ -20,8 +19,6 @@ function Login() {
           Forgot your password?
         </Link>
       </Card>
-
-      <ToastContainer  />
     </>
   );
 }
