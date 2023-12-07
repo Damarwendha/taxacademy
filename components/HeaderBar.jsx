@@ -1,5 +1,5 @@
 import Link from "./Link";
-import { FaChevronLeft } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
 
 function HeaderBar({ href, title, onClick }) {
   return (
@@ -9,7 +9,7 @@ function HeaderBar({ href, title, onClick }) {
         href={href}
         onClick={onClick}
       >
-        <FaChevronLeft />
+        <FaArrowLeft />
       </Link>
       <span className="w-full overflow-dot">{title}</span>
     </div>

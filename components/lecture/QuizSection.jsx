@@ -80,7 +80,7 @@ function QuizSection({ title, currQuizNum, totalQuestionNum }) {
               />
 
               {/* Quiz modal pagination */}
-              <div className="flex justify-between mt-12">
+              <div className="flex justify-between mt-12 sm:justify-end sm:gap-2">
                 <Button className="bg-gray-200 rounded-none text-classic-black">
                   Sebelumnya
                 </Button>

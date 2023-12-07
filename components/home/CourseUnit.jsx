@@ -5,7 +5,7 @@ import Thumbnail from "../Thumbnail";
 function CourseUnit({ title, imgSrc }) {
   return (
     <Card
-      className="max-w-sm"
+      className="max-w-sm overflow-hidden"
       renderImage={() => (
         <Link href="/course">
           <Thumbnail src={imgSrc} />

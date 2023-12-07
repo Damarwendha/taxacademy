@@ -4,9 +4,8 @@ function QnAList({ quizData }) {
   return (
     <ul className="flex flex-col gap-8">
       {quizData.map((quiz, i) => (
-        <li>
+        <li key={i}>
           <QnAItem
-            key={i}
             question={quiz.question}
             answers={quiz.answers}
             currQuestionNum={i + 1}
