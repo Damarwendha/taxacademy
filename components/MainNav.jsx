@@ -1,11 +1,5 @@
 import Link from "next/link";
-import {
-  Navbar as NavbarUi,
-  NavbarBrand,
-  NavbarLink,
-  NavbarCollapse,
-  NavbarToggle,
-} from "flowbite-react";
+import { Navbar as NavbarUi, NavbarBrand } from "flowbite-react";
 import Logo from "./Logo";
 
 function Navbar() {

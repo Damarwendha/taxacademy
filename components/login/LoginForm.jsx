@@ -1,7 +1,7 @@
-import { Button, TextInput } from "flowbite-react";
 import { useForm } from "react-hook-form";
-import Error from "../Error";
 import { toast } from "react-toastify";
+import { Button, TextInput } from "flowbite-react";
+import Error from "../Error";
 import "react-toastify/dist/ReactToastify.css";
 
 function LoginForm() {
@@ -13,7 +13,7 @@ function LoginForm() {
 
   function onSubmit(data) {
     toast.success("Berhasil Login !", {
-      position: toast.POSITION.TOP_LEFT,
+      position: toast.POSITION.BOTTOM_CENTER,
     });
     console.log(data);
   }

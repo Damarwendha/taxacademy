@@ -20,7 +20,7 @@ function Login() {
         </Link>
       </Card>
     </>
-  );
+  )
 }
 
 export default Login;
