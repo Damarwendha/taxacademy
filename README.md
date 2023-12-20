@@ -1,5 +1,4 @@
 ### Participant (demo)
-![image](https://github.com/Damarwendha/taxacademy/assets/143293717/f92b812e-0cd8-436d-b40d-d27f1ca7d0dc)
 <img src="https://i.imgur.com/2KeEeSG.png" />
 <img src="https://i.imgur.com/hwWpke5.png" />
 <img src="https://i.imgur.com/PRwhCYY.png" />
