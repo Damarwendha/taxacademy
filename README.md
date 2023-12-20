@@ -1,4 +1,4 @@
-## # Participant (demo)
+![image](https://github.com/Damarwendha/taxacademy/assets/143293717/f92b812e-0cd8-436d-b40d-d27f1ca7d0dc)## # Participant (demo)
 <img src="https://i.imgur.com/2KeEeSG.png" />
 <img src="https://i.imgur.com/hwWpke5.png" />
 <img src="https://i.imgur.com/PRwhCYY.png" />
@@ -7,6 +7,9 @@
 
 ## # Admin (demo)
 <img src="https://i.imgur.com/LfAk7UY.png" />
+<img src="https://github.com/Damarwendha/taxacademy/assets/143293717/24b5d455-5294-4b26-9462-14656eb31f3d" />
+<img src="https://github.com/Damarwendha/taxacademy/assets/143293717/b29e4c43-a247-4e45-b440-9135769dac0c" />
+
 
 
 
